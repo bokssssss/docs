@@ -1,1 +1,0 @@
-企业所有者可以通过 SAML IdP 跨企业帐户拥有的所有组织启用 SAML SSO 和集中式身份验证。 After you enable SAML SSO for your enterprise account, SAML SSO is enforced for all organizations owned by your enterprise account. 所有成员都需要使用 SAML SSO 进行身份验证才能访问其所属的组织，并且企业所有者在访问企业帐户时需要使用 SAML SSO 进行身份验证。

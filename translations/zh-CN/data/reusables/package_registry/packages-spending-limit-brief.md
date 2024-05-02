@@ -1,1 +1,0 @@
-If you are a monthly-billed customer, your account will have a default spending limit of 0 US dollars (USD), which prevents additional usage of storage or data transfer after you reach the included amounts. 如果您通过发票支付您的帐户，您的帐户将有无限的默认支出限额。

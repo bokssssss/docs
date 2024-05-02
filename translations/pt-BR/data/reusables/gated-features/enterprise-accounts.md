@@ -1,1 +1,0 @@
-As contas empresariais estão disponíveis com {% data variables.product.prodname_ghe_cloud %}{% ifversion ghae %}, {% data variables.product.prodname_ghe_managed %},{% endif %} e {% data variables.product.prodname_ghe_server %}. {% ifversion fpt %}Para obter mais informações, consulte "[Sobre contas corporativas](/articles/about-enterprise-accounts)".{% endif %}

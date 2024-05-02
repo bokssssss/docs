@@ -1,48 +1,53 @@
 ---
 title: About upgrades to new releases
 shortTitle: About upgrades
-intro: '{% ifversion ghae %}Your {% data variables.product.product_name %} enterprise is updated with the latest features and bug fixes on a regular basis by {% data variables.product.company_short %}.{% else %}You can benefit from new features and bug fixes for {% data variables.product.product_name %} by upgrading your enterprise to a newly released version.{% endif %}'
+intro: 'You can benefit from new features and bug fixes for {% data variables.product.prodname_ghe_server %} by upgrading your instance to a newly released version.'
 versions:
-  ghes: '>=3.0'
-  ghae: '*'
+  ghes: '*'
 type: overview
 topics:
   - Enterprise
   - Upgrades
 ---
 
-{% data variables.product.product_name %} is constantly improving, with new functionality and bug fixes introduced through major and minor releases. {% ifversion ghae %}{% data variables.product.prodname_ghe_managed %} is a fully managed service, so {% data variables.product.company_short %} completes the upgrade process for your enterprise.{% endif %}
+{% data reusables.enterprise.constantly-improving %}
 
-Major releases include new functionality and feature upgrades and typically occur quarterly. {% ifversion ghae %}{% data variables.product.company_short %} will upgrade your enterprise to the latest major release. You will be given advance notice of any planned downtime for your enterprise.{% endif %}
+## Feature releases
 
-{% ifversion ghes %}
+Feature releases include new functionality and feature upgrades and typically occur quarterly.
 
-Starting with {% data variables.product.prodname_ghe_server %} 3.0, all major releases begin with at least one release candidate. Release candidates are proposed major releases, with a complete feature set. There may be bugs or issues in a release candidate which can only be found through feedback from customers actually using {% data variables.product.product_name %}. 
+## Release candidates
 
-You can get early access to the latest features by testing a release candidate as soon as the release candidate is available. You can upgrade to a release candidate from a supported version and can upgrade from the release candidate to later versions when released. You should upgrade any environment running a release candidate as soon as the release is generally available. For more information, see "[Upgrade requirements](/admin/enterprise-management/upgrade-requirements)."
+All feature releases begin with at least one release candidate.
 
-Release candidates should be deployed on test or staging environments. As you test a release candidate, please provide feedback by contacting support. For more information, see "[Working with {% data variables.contact.github_support %}](/admin/enterprise-support)."
+Release candidates are proposed feature releases, with a complete feature set. There may be problems in a release candidate which can only be found through feedback from customers actually using {% data variables.product.product_name %}.
 
-We'll use your feedback to apply bug fixes and any other necessary changes to create a stable production release. Each new release candidate adds bug fixes for issues found in prior versions. When the release is ready for widespread adoption, {% data variables.product.company_short %} publishes a stable production release.
+For performance, stability, and security reasons:
+- **Do not install a release candidate in a production environment.** Release candidate builds are intended solely for use in a test or staging environment.
+- **Do not upgrade to a release candidate from a supported, earlier version.** Instead, install a release candidate in a new, test environment.
+- **Do not upgrade from the release candidate to later versions when they are released**, including generally available  releases. Instead, destroy the release candidate environment as soon as the generally available release is available.
 
-{% endif %}
+As you test a release candidate, please provide feedback by contacting support. See "[AUTOTITLE](/support)."
 
-{% warning %}
+Each new release candidate adds bug fixes for issues found in prior versions. When the release is ready for widespread adoption, {% data variables.product.company_short %} publishes a stable feature release.
 
-**Warning**: The upgrade to a new major release will cause a few hours of downtime, during which none of your users will be able to use the enterprise. You can inform your users about downtime by publishing a global announcement banner, using your enterprise settings or the REST API. For more information, see "[Customizing user messages on your instance](/admin/user-management/customizing-user-messages-on-your-instance#creating-a-global-announcement-banner)" and "[{% data variables.product.prodname_enterprise %} administration](/rest/reference/enterprise-admin#announcements)."
+## Patch releases
 
-{% endwarning %}
+Patch releases:
 
-{% ifversion ghes %}
+- Consist of hot patches and bug fixes
+- Happen more frequently than feature releases
+- Are generally available when first released, with no release candidates
 
-Minor releases, which consist of hot patches and bug fixes only, happen more frequently. Minor releases are generally available when first released, with no release candidates. Upgrading to a minor release typically requires less than five minutes of downtime.
+Upgrading to a patch release typically requires less than five minutes of downtime.
 
-To upgrade your enterprise to a new release, see "[Release notes](/enterprise-server/admin/release-notes)" and "[Upgrading {% data variables.product.prodname_ghe_server %}](/admin/enterprise-management/upgrading-github-enterprise-server)."
+## Upgrading {% data variables.product.prodname_ghe_server %}
 
-{% endif %}
+There are two ways to upgrade {% data variables.product.prodname_ghe_server %}:
+
+- To set up a completely new {% data variables.product.product_name %} instance and configure the instance however you like, see "[AUTOTITLE](/admin/installation/setting-up-a-github-enterprise-server-instance)" and "[AUTOTITLE](/admin/configuration/configuring-your-enterprise)."
+- To upgrade your existing instance to a new release, see "[AUTOTITLE](/enterprise-server@latest/admin/release-notes)" and "[AUTOTITLE](/admin/enterprise-management/updating-the-virtual-machine-and-physical-resources/upgrading-github-enterprise-server)."
 
 ## Further reading
 
-- [ {% data variables.product.prodname_roadmap %} ]( {% data variables.product.prodname_roadmap_link %} ) in the  `github/roadmap` repository{% ifversion ghae %}
-- [ {% data variables.product.prodname_ghe_managed %} release notes](/admin/release-notes)
-{% endif %}
+- [{% data variables.product.prodname_roadmap %}]({% data variables.product.prodname_roadmap_link %}) in the  `github/roadmap` repository

@@ -1,1 +1,0 @@
-1. En la esquina superior derecha de {% data variables.product.product_name %}, haz clic en tu foto de perfil y luego en **Tus organizaciones**. ![Tus organizaciones en el menú de perfil](/assets/images/help/profile/your-organizations.png)

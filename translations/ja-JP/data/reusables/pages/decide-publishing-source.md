@@ -1,1 +1,0 @@
-1. {% ifversion fpt or ghes > 2.22 or ghae %}どの公開ソースを使いたいか、{% else %}プロジェクトサイトを作成しているなら、どの公開ソースを使いたいか、{% endif %}判断してください。 {% ifversion ghes < 3.0 %}ユーザもしくはOrganizationのサイトを作成しているなら、サイトのソースコードは`master`ブランチに保存しなければなりません。{% endif %}詳しい情報については「[{% data variables.product.prodname_pages %}について](/articles/about-github-pages#publishing-sources-for-github-pages-sites)」を参照してください。

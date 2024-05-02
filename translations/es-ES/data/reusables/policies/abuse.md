@@ -1,1 +1,0 @@
-{% data variables.product.prodname_dotcom %} no tolera el abuso.{% ifversion fpt %} Para más información sobre las políticas de {% data variables.product.prodname_dotcom %}consulta nuestros [Términos de Servicio](/articles/github-terms-of-service) y [Pautas de la Comunidad](/articles/github-community-guidelines).{% endif %}

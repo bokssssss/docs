@@ -1,1 +1,0 @@
-1. Under "Notification preferences", select **Restrict email notifications to only approved or verified domains**. ![Casilla para restringir las notificaciones por correo electrónico para los correos electrónicos de dominio verificado](/assets/images/help/organizations/restrict-email-notifications-to-domain.png)

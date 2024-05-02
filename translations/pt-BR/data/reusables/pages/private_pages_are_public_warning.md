@@ -1,5 +1,0 @@
-{% warning %}
-
-**Aviso**: {% ifversion ghes or ghae %}Se o administrador do site habilitou as páginas públicas, {% endif %} os sites de {% data variables.product.prodname_pages %} estarão disponíveis publicamente na internet{% ifversion fpt %} por padrão{% endif %}mwsmo que o repositório para o site seja privado ou interno.{% ifversion fpt %} {% data reusables.pages.about-private-publishing %} caso contrário, se{% else %} Se{% endif %} você tiver dados confidenciais no repositório do seu site, você deverá remover os dados antes de publicá-los. For more information, see{% ifversion ghes or ghae %} "[Configuring {% data variables.product.prodname_pages %} for your enterprise](/admin/configuration/configuring-github-pages-for-your-enterprise#enabling-public-sites-for-github-pages)" and{% endif %} "[About repositories](/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility){% ifversion fpt %}" and "[Changing the visibility of your {% data variables.product.prodname_pages %} site](/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)."{% else %}."{% endif %}
-
-{% endwarning %}

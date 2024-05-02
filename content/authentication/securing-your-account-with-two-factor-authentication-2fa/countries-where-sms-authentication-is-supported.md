@@ -7,11 +7,12 @@ redirect_from:
   - /github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported
 versions:
   fpt: '*'
+  ghec: '*'
 topics:
   - 2FA
 shortTitle: Countries supporting SMS
 ---
-If we don't support two-factor authentication via text message for your country of residence, you can set up authentication via a TOTP mobile application. For more information, see "[Configuring two-factor authentication](/articles/configuring-two-factor-authentication)."
+If we don't support two-factor authentication via text message for your country of residence, you can set up authentication via a TOTP mobile application. For more information, see "[AUTOTITLE](/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)."
 
 ## Supported countries for SMS authentication
 
@@ -65,7 +66,6 @@ If your country is not on this list, then we aren't currently able to reliably d
 <li>Iceland</li>
 <li>India</li>
 <li>Indonesia</li>
-<li>Iran</li>
 <li>Ireland</li>
 <li>Israel</li>
 <li>Italy</li>
@@ -103,7 +103,6 @@ If your country is not on this list, then we aren't currently able to reliably d
 <li>Portugal</li>
 <li>Qatar</li>
 <li>Romania</li>
-<li>Russia</li>
 <li>Rwanda</li>
 <li>Senegal</li>
 <li>Serbia</li>
@@ -123,10 +122,8 @@ If your country is not on this list, then we aren't currently able to reliably d
 <li>Tanzania</li>
 <li>Togo</li>
 <li>Trinidad and Tobago</li>
-<li>Turkey</li>
 <li>Turks and Caicos Islands</li>
 <li>Uganda</li>
-<li>Ukraine</li>
 <li>United Arab Emirates</li>
 <li>United Kingdom</li>
 <li>United States</li>
@@ -136,4 +133,4 @@ If your country is not on this list, then we aren't currently able to reliably d
 
 ## Further reading
 
-- "[About two-factor authentication](/articles/about-two-factor-authentication)"
+- "[AUTOTITLE](/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication)"
